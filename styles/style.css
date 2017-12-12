@@ -6,7 +6,7 @@ html {
 body {
 	background:white;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 100;
+	
 }
 header {
 	padding-top:18px;
@@ -25,6 +25,7 @@ header {
 	
 }
   input {
+	background-image: url();
 	display: block;
 	margin-left:auto;
 	border-radius: 2px;
@@ -45,6 +46,7 @@ header {
    .basket {
 	
 }
+   .sign-in {}
    .categories {
 	   padding-top:37px;
 }
@@ -60,7 +62,20 @@ header {
 	   margin-left:-10px;
 }
 	 ul.left-list li {
-		 
+		min-width:80px; 
+}
+   .categories ul.right-list {
+	
+}
+   header .Btn {
+	max-width:170px;
+	height: 23px;
+	border-radius:2px;
+	margin-left:auto;
+	font-weight: 600;
+	line-height: 23px;
+	color:  #fefefe;
+	font-size:12px;
 }
 .col-xs-3 {}
 
@@ -115,7 +130,7 @@ main .offer-central {
 	line-height: 35px;
 }
  .offer-img {
-	 background:url(../img/offer-image.jpg);
+	 background:url(../img/offer-image.jpg) center;
 	 background-repeat: no-repeat;
 	 background-size: cover;
 	 max-width: 623px;
@@ -141,22 +156,57 @@ main .offer-central {
 }
 
 
-.latest .latest-img .label {
+ .latest-img .label {
 	position: absolute;
 	width: 53px;
 	height: 24px;
 	top:20px;
 	left:15px;
+	border-top-left-radius:0px;
+	border-bottom-left-radius:0px;
 	border-top-right-radius:12px;
 	border-bottom-right-radius:12px;
 	line-height: 20px;
 	font-size: 12px;
 	font-weight: 300;
-	background-color:yellow;
-	color:black;
+	background-color:#f0f265;
+	color:rgba(0, 0, 0, 0.6);
+}
+.latest-text_top {
+	margin-top:17px;
+	padding-left:15px;
+	font-size: 14px;
+	font-weight: 600;
+}
+.latest-text_bottom {
+	border-bottom:1px solid rgba(128, 128, 128, 0.38);
 	
+	padding:15px 15px;
+	font-size: 16px;
+	font-weight: 300;
+	color:rgba(0, 0, 0, 0.63);
+}
+.latest-text_bottom span {
+	font-size:12px;
+	vertical-align: text-top;
+}
+
+ .latest-icons {
+	height:35px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width:80%;
+	padding-top:9px;
+	 margin:auto;
 	
+}
+.latest-icons em.fa-heart-o {
+	font-size:16px;
+}
+.latest-icons span {
 	
+	font-size:16px;
 }
 .latest .scroll-down  {
 	margin:65px auto 0;
@@ -191,21 +241,118 @@ main .offer-central {
 	box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.2);
 	max-width: 270px;
 	height: 177px;
-	margin-bottom:50px;;
+	margin-bottom:50px;
+}
+.brand-container .brand-img {
+	height:142px;
+	overflow: hidden;
+	border-bottom:1px solid rgba(128, 128, 128, 0.38);
 }
 .brand-container .brand-box img {
 	max-width:150px;
 	display: block;
+	margin:20px auto;
+	
+}
+.brand-container .brand-box span {
 	margin: auto;
+	display: block;
+	width:15px;
+	font-size:16px;
+	padding-top:8px;
+}
+.brand-container .Btn {
+	border-radius: 2px;
+	line-height:35px;
+	max-width: 190px;
+	height: 35px;
+	font-size: 12px;
+}
+.about-container {
+	margin:80px 0 ;
+}
+.about-box {
+	box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.2);
+	max-width: 1169px;
+	
+}
+.about-box .about-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	min-height: 389px;
+	text-align: center;
+	
+}
+.about-img {
+	background:url(../img/About-Img.jpg) no-repeat center;
+	-webkit-background-size:cover;
+	background-size:cover;
+	max-width:585px;
+	height: 389px;
+	
+}
+footer {
+	display: block;
+	min-height:284px;
+	background-color:#2a2a2a;
+	color:#fefefe;
+	padding-top:87px;
+}
+  .footer-logo {
+	background:url(../img/Footer-Logo.png) no-repeat center;
+	background-size: contain;
+	 width: 170px;
+	height: 60px;
+}
+  .footer-list {
+	  font-size: 14px;
+	  display: flex;
+	  flex-direction: row;
+	  justify-content: space-between;
+	  padding-left:0px;
+	  font-weight: 600;
+	  text-align: center;
+}
+  .number-box {
+	  text-align: right;
+}
+   .number-box span {
+	  display: inline-block;
+}
+
+.Social {
+	text-align: right;
 }
 /* кросс-классы */
 .Btn {
 	background-color:  #5cd7ea;
+	color:#fefefe;
+	text-align: center;
 }
 .text-center {
 	text-align: center;
 }
-
+.phone-img {
+	background:url(../img/phone.png) no-repeat center;
+	background-size: contain;
+}
+h2 {
+	font-weight: 700;
+	font-size: 32px;
+	margin-bottom:40px;
+}
+h3 {
+	font-weight: 700;
+	font-size: 32px;
+	margin-bottom:40px;
+}
+.about-us {
+	font-weight: 700;
+	font-size: 32px;
+	margin-bottom:40px;
+}
 /* костыли */
 main .container .offer-central {
 	
