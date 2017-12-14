@@ -8,6 +8,12 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	
 }
+.container {
+	padding-right: 15px; 
+     padding-left: 15px; 
+    margin-right: auto;
+    margin-left: auto;
+}
 header {
 	padding-top:18px;
 	min-height:209px;
@@ -21,14 +27,53 @@ header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin-right:auto;
-	margin-left:-10px;
+	
+	
 	
 }
-  input {
+ input {
+  
+}
+
+input[name="q"] {
+  border: none; /* Убираем рамку */
+    outline: none; /* Убираем свечение в Chrome и Safari */
+    -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+    width: 230px; /* Ширина поля */
+    vertical-align: middle;
+	min-height:25px;
+}
+input[placeholder] {
+	color:  #000000;
+	padding-left:8px;
+	font-size: 10px;
+	font-weight:400;
+	border:1px solid rgba(0, 0, 0, 0.14);
+	border-radius: 2px;
+	
+}
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+input[type="submit"] {
+  	width: 17px; /* Ширина кнопки */
+    height: 25px; /* Высота кнопки */
+	color:transparent;
+    border: none; /* Убираем рамку */
+    background: url(../img/Search.png) no-repeat 50% 50%;
+	background-size: contain;/* Параметры фона */
+	margin-left:-1.8em;
+	margin-top:15px;
+}
+/* 
+input {
 	background-image: url();
 	display: block;
 	margin-left:auto;
-	border-radius: 2px;
+	  margin-top:15px;
+	padding-left:10px;
+	
 	border-width: 1px;
 	border-color:  rgba(0, 0, 0, 0.14);
 	border-style: solid;
@@ -38,15 +83,23 @@ header {
 }
    input[placeholder] {
 	color:  #000000;
-	font-size: 10px;/* Приближение из-за подстановки шрифтов */
+	font-size: 10px;
 	font-weight: 400;
-	line-height: 30px;/* Приближение из-за подстановки шрифтов */
-	text-align: left;
-}
-   .basket {
+	line-height: 30px;
 	
 }
-   .sign-in {}
+*/
+
+
+
+   .basket {
+	padding-top:16px;
+}
+   .sign-in {
+	   padding-top:16px;
+	   text-align: right;
+	   padding-right:0;
+}
    .categories {
 	   padding-top:37px;
 }
@@ -54,41 +107,50 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: center;
 	   flex-wrap: wrap;
-	font-size: 14px;/* Приближение из-за подстановки шрифтов */
+	   align-content: center;
+	font-size: 14px;
 	font-weight: 700;
-	line-height: 30px;/* Приближение из-за подстановки шрифтов */
+	line-height: 30px;
 	padding-left:0;
-	   margin-left:-10px;
+	   
 }
 	 ul.left-list li {
-		min-width:80px; 
-}
+		min-width:90px;
+}	
    .categories ul.right-list {
-	
+	padding-left:0;
+	padding-top:5px;
+	color:  #2a2a2a;
+	font-size: 14px;
+}
+   .categories ul.right-list li {
+	display: inline-block;
+	min-width:20px;
 }
    header .Btn {
 	max-width:170px;
 	height: 23px;
 	border-radius:2px;
 	margin-left:auto;
+	margin-top:3px;
 	font-weight: 600;
 	line-height: 23px;
 	color:  #fefefe;
 	font-size:12px;
 }
-.col-xs-3 {}
+
 
 	li {
 	display: inline-block;
 	
 }
-.col-sm-6 {
-	
-}
+
 main .offer-central {
 	box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);
 	border-radius:2px;
+	margin:0;
 }
 
  .offer-text {
@@ -130,7 +192,8 @@ main .offer-central {
 	line-height: 35px;
 }
  .offer-img {
-	 background:url(../img/offer-image.jpg) center;
+	 background:url(../img/offer-image.jpg);
+	 background-position:-15px;
 	 background-repeat: no-repeat;
 	 background-size: cover;
 	 max-width: 623px;
@@ -384,17 +447,26 @@ main .container .offer-central {
 	.header-logo {
 	width: 150px;
 	height: 60px;
-	background-image:url(../img/Logo.png);
-	background-repeat: no-repeat;
+	
 	background-size: contain;
 	margin-right:auto;
 	margin-left:-10px;
 	
 }
-	input {
-		margin-top:3px;
-		width: 128px;
+	.categories {
+	   padding-top:17px;
+}
+	input[name="q"] {
+		
+		width:150px;
+		
 	}
+	.basket {
+	padding-top:0px;
+}
+   .sign-in {
+	   padding-top:0px;
+}
 .brand-container {
 	visibility: hidden;
 	position: absolute;
@@ -438,5 +510,10 @@ main .container .offer-central {
 	font-size:16px;
 	padding-top:8px;
 }
-	
+	.container {
+	padding-right: 15px; 
+     padding-left: 15px; 
+    margin-right: auto;
+    margin-left: auto;
+}
 }
