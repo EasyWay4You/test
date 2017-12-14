@@ -4,31 +4,38 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
-    <title>Bootstrap 101 Template</title>
+    <title>Pure</title>
 
     <!-- Bootstrap -->
     <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"> 
     <link href="styles/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="styles/Font.css">
+     <link rel="stylesheet" href="styles/Font.css"> 
     
   </head>
   <body>
     <header>
     	<div class="container">
     		<div class="row">
-    			<div class="col-md-5 col-sm-3 col-xs-6">
+    			<div class="col-lg-5 col-md-4 col-sm-4 col-xs-5">
     				<div class="header-logo"></div>
     			</div>
-    			<div class="col-md-3 col-sm-5 col-xs-5">
-    				
-    				<div>
-    				<input type="text" placeholder="   Начать поиск">
-    				</div>
+    			<div class="col-lg-3 col-md-4 col-sm-5 col-xs-7">
+				<form>
+  					<input name="q" placeholder="Начать поиск">
+ 					<input type="submit">
+				</form>
+<!--
+<form>
+   <div class="search">
+   <input type="search" placeholder="Начать поиск">
+   <em class="fa fa-search"></em>
+   </div>
+</form> 
+-->
     			</div>
-    			<div class="col-sm-2 col-xs-6">
+    			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
     			  <div class="basket">
     				<span class="icon icon-ShoppingCart"></span>
     				<span>2 648 грн 
@@ -36,15 +43,16 @@
     				</span>
     			  </div>
     			</div>
-    			<div class="col-sm-2 col-xs-6 sign-in">
-    			  
-    				<span>Вход</span>
-    				<span>Регистрация</span>
+    			<div class="col-lg-2 col-md-2 col-sm-4 col-xs-9">
+    			  <div class="sign-in">
+    				<span>ВХОД</span>
+    				<span>РЕГИСТРАЦИЯ</span>
+    			  </div>
     			</div>
     		</div>
     	  <div class="categories">
     		<div class="row">
-    			<div class="col-md-6 col-sm-12">
+    			<div class="col-md-6 col-sm-12 col-xs-12">
     			  <ul class="left-list">
     				<li>Женская одежда</li>
     				<li>Аксесуары</li>
@@ -54,14 +62,14 @@
     			  </ul>
     			</div>
     			<div class="col-md-1 col-sm-0"></div>
-    			<div class="col-md-3 col-sm-6 col-xs-6">
+    			<div class="col-md-3 col-sm-6 col-xs-7">
     			  <ul class="right-list">
     				<li>Оплата</li>
     				<li>Доставка</li>
     				<li>Возврат</li>
     			  </ul>
     			</div>
-    			<div class="col-md-2 col-sm-6 col-xs-6">
+    			<div class="col-md-2 col-sm-6 col-xs-5">
     				<div class="Btn">Заказать звонок</div>
     			</div>
     		</div>
@@ -350,7 +358,7 @@
 		</div>
 	</div>	
 </footer>
-    
+   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
