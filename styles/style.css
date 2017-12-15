@@ -375,7 +375,7 @@ main .offer-central {
 .about-box {
 	box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.2);
 	max-width: 1169px;
-	height: 389px;
+	
 	
 }
 .about-box .about-text {
@@ -476,6 +476,7 @@ footer {
 	  display: flex;
 	  flex-direction: row;
 	  justify-content: space-between;
+	  flex-wrap:wrap;
 	  padding-left:0px;
 	  color:  rgba(254, 254, 254, 0.87);
 	  padding-top:6px;
@@ -565,6 +566,7 @@ main .container .offer-central {
 @media screen and (max-width:992px) {
 .Logo-Blue {
 		visibility: hidden;
+	position: absolute;
 	}
 }
 
@@ -635,12 +637,8 @@ main .container .offer-central {
 	font-size:16px;
 	padding-top:8px;
 }
-	.container {
-	padding-right: 15px; 
-     padding-left: 15px; 
-    margin-right: auto;
-    margin-left: auto;
-}
 	
-
+.about-box .about-text p {
+	width:100%;
+	}
 }
