@@ -3,6 +3,7 @@ html {
 	 margin: 0;
 	
 }
+
 body {
 	background:white;
 	font-family: 'Open Sans', sans-serif;
@@ -27,6 +28,7 @@ header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin-right:auto;
+	cursor:pointer;
 	
 	
 	
@@ -99,6 +101,7 @@ input {
 }
 .basket span:nth-child(2) {
 	padding-left:6px;
+	cursor:pointer;
 }
    header .icon-ShoppingCart {
 	  top:5px;
@@ -106,7 +109,8 @@ input {
 	  width:50px;
 	   vertical-align: middle;
 	  height: 50px;
-	  background-color:;
+	   cursor:pointer;
+	  
 }
 header .icon-ShoppingCart:after {
 	content:'3';
@@ -122,7 +126,7 @@ header .icon-ShoppingCart:after {
 	margin-left:-7px;
 	margin-top:-3px;
 }
-   .basket em.fa-angle-down {}
+   
    .sign-in {
 	   padding-top:16px;
 	   text-align: right;
@@ -130,6 +134,8 @@ header .icon-ShoppingCart:after {
 	   font-size: 12px;
 	   font-weight: 500;
 }
+	.sign-in span {cursor: pointer;}
+cursor:pointer;
 .sign-in span:nth-child(2) {border-left:1px solid rgba(0, 0, 0, 0.54);padding-left:5px;}
    .categories {
 	   padding-top:37px;
@@ -148,7 +154,8 @@ header .icon-ShoppingCart:after {
 	   
 }
 	 ul.left-list li {
-		min-width:90px;
+		margin-right:20px;
+		 
 }	
    .categories ul.right-list {
 	padding-left:0;
@@ -159,7 +166,7 @@ header .icon-ShoppingCart:after {
    .categories ul.right-list li {
 	display: inline-block;
 	min-width:20px;
-	padding:0 6px;
+	margin:0 6px;
 	font-weight: 500;
 }
    header .Btn {
@@ -175,10 +182,7 @@ header .icon-ShoppingCart:after {
 }
 
 
-	li {
-	display: inline-block;
 	
-}
 
 main .offer-central {
 	box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);
@@ -192,13 +196,14 @@ main .offer-central {
 	 margin-left:auto;
 	 min-height:420px;
 }
-   .offer-text h1{
-	   position: relative;
+   .offer-text h1 {
+	   margin:0 auto 12px;
 	 font-size: 23px;
 	 font-weight: 500;
 	 line-height: 36px;
 	 font-weight: 600;
-	 
+	   max-width:370px;
+	 cursor:pointer;
 }
    .offer-text .underline {
 	margin: auto;
@@ -267,12 +272,15 @@ main .offer-central {
 	font-weight: 300;
 	background-color:#f0f265;
 	color:rgba(0, 0, 0, 0.6);
+	 cursor:pointer;
 }
 .latest-text_top {
 	margin-top:17px;
-	padding-left:15px;
+	margin-left:15px;
+	max-width:111px;
 	font-size: 14px;
 	font-weight: 600;
+	cursor:pointer;
 }
 .latest-text_bottom {
 	border-bottom:1px solid rgba(128, 128, 128, 0.38);
@@ -298,11 +306,12 @@ main .offer-central {
 	
 }
 .latest-icons em.fa-heart-o {
-	font-size:16px;
+	font-size:17px;
+	cursor:pointer;
 }
 .latest-icons span {
-	
-	font-size:16px;
+	cursor:pointer;
+	font-size:17px;
 }
 .latest .scroll-down  {
 	margin:65px auto 0;
@@ -324,7 +333,7 @@ main .offer-central {
 	font-weight: 500;
 	letter-spacing: -0.2px;
 	color:#8e8a8a;
-
+	cursor:pointer;
 	
 	
 	
@@ -343,6 +352,7 @@ main .offer-central {
 	height:142px;
 	overflow: hidden;
 	border-bottom:1px solid rgba(128, 128, 128, 0.38);
+	cursor:pointer;
 }
 .brand-container .brand-box img {
 	max-width:150px;
@@ -356,6 +366,7 @@ main .offer-central {
 	width:15px;
 	font-size:16px;
 	padding-top:8px;
+	cursor:pointer;
 }
 
 /*.span12 {
@@ -404,12 +415,14 @@ main .offer-central {
 	
 }
 .about-box .about-text span:nth-child(2) {
-	display:block;
-	padding-top:11px;
+	display: block;
+	margin-top:20px;
+	width:120px;
 	color:  #5cd8ea;
 	margin-left:46px;
 	font-size: 14px;
 	font-weight: 500;
+	cursor:pointer;
 }
 .Logo-parent {
 	position: relative;
@@ -417,11 +430,15 @@ main .offer-central {
 .Logo-Blue {
 	position:absolute;
 	width:215px;
-	height:152px;
-	background-color:  rgba(92, 215, 234, 0.95);
-	right:41%;
+	min-height:152px;
+	background-image:url(../img/Blue-logo-pure.jpg);
+	background-repeat:no-repeat;
+	background-size: contain;
+	right:40.7%;
+	opacity:0.93;
 	top:110px;
-	z-index: 100;
+	z-index:100;
+	cursor:pointer;
 	
 	
 	
@@ -441,13 +458,13 @@ main .offer-central {
 	-o-transform:rotate(45deg);
 	transform:rotate(45deg);
 	background-color:#2a2a2a;
-	cursor:pointer;
 	position:absolute;
 	left:49%;
 	width:40px;
 	height:40px;
 	margin:-20px auto 0;
 	transition:0.3s;
+	cursor:pointer;
 }
 
 .scroll-up em.fa {
@@ -473,6 +490,8 @@ footer {
 	background-size: contain;
 	 width: 170px;
 	height: 60px;
+	cursor:pointer;
+	
 }
   .footer-list {
 	  font-size: 14px;
@@ -499,8 +518,8 @@ footer {
  .copyright {
 	margin-top:15px;
 	color:  rgba(212, 212, 212, 0.7);
-	font-size: 12px;
-	line-height: 22px;
+	 font-size: 12px;
+	 line-height: 22px;
 }
 .Social {
 	display: flex;
@@ -515,16 +534,23 @@ footer {
 	
 	
 }
-.Social .twitter {background:url(../img/icons8-twitter-circled.png) no-repeat center; background-size:contain;}
-.Social .vkontakte {background:url(../img/icons8-vk-circled.png) no-repeat center; background-size:contain;}
-.Social .pinterest {background:url(../img/icons8-pinterest.png) no-repeat center; background-size:contain;}
-.Social .facebook {background:url(../img/icons8-facebook-circled.png) no-repeat center; background-size:contain;}
-.Social .odnoklasniki {background:url(../img/icons8-odnoklassniki-circled.png) no-repeat center; background-size:contain;}
+.Social .twitter {background:url(../img/icons8-twitter-circled.png) no-repeat center; background-size:contain;cursor:pointer;}
+.Social .vkontakte {background:url(../img/icons8-vk-circled.png) no-repeat center; background-size:contain;cursor:pointer;}
+.Social .pinterest {background:url(../img/icons8-pinterest.png) no-repeat center; background-size:contain;cursor:pointer;}
+.Social .facebook {background:url(../img/icons8-facebook-circled.png) no-repeat center; background-size:contain;cursor:pointer;}
+.Social .odnoklasniki {background:url(../img/icons8-odnoklassniki-circled.png) no-repeat center; background-size:contain;cursor:pointer;}
+
+
+
 				/* кросс-классы */
+
+
+
 .Btn {
 	background-color:  #5cd7ea;
 	color:#fefefe;
 	text-align: center;
+	cursor:pointer;
 }
 .text-center {
 	text-align: center;
@@ -533,6 +559,12 @@ footer {
 	background:url(../img/phone.png) no-repeat center;
 	background-size: contain;
 }
+li {
+	display: inline-block;
+	cursor: pointer;
+	
+}
+
 h2 {
 	font-weight: 700;
 	font-size: 32px;
@@ -573,7 +605,11 @@ main .container .offer-central {
 	position: absolute;
 	}
 }
-
+@media screen and (max-width:1200px) {
+	.Logo-Blue {
+		right:34.5%;
+	}
+}
 @media screen and (max-width:768px) {
 	.header-logo {
 	width: 150px;
