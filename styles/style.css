@@ -640,5 +640,14 @@ main .container .offer-central {
 	
 .about-box .about-text p {
 	width:100%;
-	}
+}
+	.about-img {
+	background:url(../img/About-Img.jpg) no-repeat center;
+	-webkit-background-size:cover;
+	background-size:cover;
+	width:80vw;
+	height: 389px;
+	margin: auto;
+	
+}
 }
