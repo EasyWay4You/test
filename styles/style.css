@@ -404,6 +404,8 @@ main .offer-central {
 	
 }
 .about-box .about-text span:nth-child(2) {
+	display:block;
+	padding-top:11px;
 	color:  #5cd8ea;
 	margin-left:46px;
 	font-size: 14px;
