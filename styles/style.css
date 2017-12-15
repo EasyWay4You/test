@@ -441,8 +441,9 @@ main .offer-central {
 	-o-transform:rotate(45deg);
 	transform:rotate(45deg);
 	background-color:#2a2a2a;
+	cursor:pointer;
 	position:absolute;
-	left:50%;
+	left:49%;
 	width:40px;
 	height:40px;
 	margin:-20px auto 0;
