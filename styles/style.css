@@ -499,7 +499,8 @@ footer {
  .copyright {
 	margin-top:15px;
 	color:  rgba(212, 212, 212, 0.7);
-	 font-size: 12px;
+	font-size: 12px;
+	line-height: 22px;
 }
 .Social {
 	display: flex;
