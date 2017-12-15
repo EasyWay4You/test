@@ -31,8 +31,8 @@ header {
 	
 	
 }
- input {
-  
+ form {
+ 	text-align: right;
 }
 
 input[name="q"] {
@@ -42,6 +42,7 @@ input[name="q"] {
     width: 230px; /* Ширина поля */
     vertical-align: middle;
 	min-height:25px;
+	
 }
 input[placeholder] {
 	color:  #000000;
@@ -57,14 +58,14 @@ input[placeholder] {
 :focus:-moz-placeholder           {color: transparent}
 :focus:-ms-input-placeholder      {color: transparent}
 input[type="submit"] {
-  	width: 17px; /* Ширина кнопки */
-    height: 25px; /* Высота кнопки */
+  	width: 15px; /* Ширина кнопки */
+    height: 23px; /* Высота кнопки */
 	color:transparent;
     border: none; /* Убираем рамку */
     background: url(../img/Search.png) no-repeat 50% 50%;
 	background-size: contain;/* Параметры фона */
 	margin-left:-1.8em;
-	margin-top:15px;
+	margin-top:18px;
 }
 /* 
 input {
@@ -94,12 +95,42 @@ input {
 
    .basket {
 	padding-top:16px;
+	text-align: right;
 }
+.basket span:nth-child(2) {
+	padding-left:6px;
+}
+   header .icon-ShoppingCart {
+	  top:5px;
+	  font-size:24px;
+	  width:50px;
+	   vertical-align: middle;
+	  height: 50px;
+	  background-color:;
+}
+header .icon-ShoppingCart:after {
+	content:'3';
+	position: absolute;
+	background-color:  rgba(255, 255, 255, 0.1);
+	font-size:12px;
+	color:  rgba(255, 255, 255, 0.87);
+	width:14px;
+	height: 14px;
+	border-radius: 7px;
+	padding-right:3.5px;
+	background-color:#5cd7ea;
+	margin-left:-7px;
+	margin-top:-3px;
+}
+   .basket em.fa-angle-down {}
    .sign-in {
 	   padding-top:16px;
 	   text-align: right;
 	   padding-right:0;
+	   font-size: 12px;
+	   font-weight: 500;
 }
+.sign-in span:nth-child(2) {border-left:1px solid rgba(0, 0, 0, 0.54);padding-left:5px;}
    .categories {
 	   padding-top:37px;
 }
@@ -128,6 +159,8 @@ input {
    .categories ul.right-list li {
 	display: inline-block;
 	min-width:20px;
+	padding:0 6px;
+	font-weight: 500;
 }
    header .Btn {
 	max-width:170px;
@@ -342,15 +375,53 @@ main .offer-central {
 .about-box {
 	box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.2);
 	max-width: 1169px;
+	height: 389px;
 	
 }
 .about-box .about-text {
-	display: flex;
+	height: 389px;
+	text-align: left;
+	padding-top:60px;
+}
+.about-box .about-text p {
+	width:103%;
+	border-top:1px solid rgba(128, 128, 128, 0.21);
+	border-bottom:1px solid rgba(128, 128, 128, 0.24);
+	min-height:270px;
+	padding-top:70px;
 	flex-direction: column;
 	justify-content: center;
-	align-content: center;
-	min-height: 389px;
-	text-align: center;
+	padding-left:46px;
+	
+}
+.about-box .about-text p span {
+	text-align: left;
+	max-width:377px;
+	min-height:120px;
+	font-size: 15px;
+	font-weight: 100;
+	line-height: 25px;
+	
+}
+.about-box .about-text span:nth-child(2) {
+	color:  #5cd8ea;
+	margin-left:46px;
+	font-size: 14px;
+	font-weight: 500;
+}
+.Logo-parent {
+	position: relative;
+}
+.Logo-Blue {
+	position:absolute;
+	width:215px;
+	height:152px;
+	background-color:  rgba(92, 215, 234, 0.95);
+	right:41%;
+	top:110px;
+	z-index: 100;
+	
+	
 	
 }
 .about-img {
@@ -359,13 +430,39 @@ main .offer-central {
 	background-size:cover;
 	max-width:585px;
 	height: 389px;
+	margin: auto;
 	
+}
+.scroll-up {
+	-webkit-transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	transform:rotate(45deg);
+	background-color:#2a2a2a;
+	position:absolute;
+	left:50%;
+	width:40px;
+	height:40px;
+	margin:-20px auto 0;
+	transition:0.3s;
+}
+
+.scroll-up em.fa {
+	color:white;
+	-webkit-transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg);
+	transform:rotate(-45deg);
+	font-size:25px;
+	display: block;
+	width:17px;
+	margin-left:6px;
 }
 footer {
 	display: block;
 	min-height:284px;
 	background-color:#2a2a2a;
-	color:#fefefe;
+	
 	padding-top:87px;
 }
   .footer-logo {
@@ -380,20 +477,45 @@ footer {
 	  flex-direction: row;
 	  justify-content: space-between;
 	  padding-left:0px;
-	  font-weight: 600;
+	  color:  rgba(254, 254, 254, 0.87);
+	  padding-top:6px;
+	  font-weight: 700;
 	  text-align: center;
 }
   .number-box {
 	  text-align: right;
+	  padding-top:8px;
+	  font-size:15px;
+	  color:  rgba(212, 212, 212, 0.86);
 }
-   .number-box span {
+   .number-box span:first-child {
 	  display: inline-block;
+	  padding-right:18px;
 }
-
+ .copyright {
+	margin-top:15px;
+	color:  rgba(212, 212, 212, 0.7);
+	 font-size: 12px;
+}
 .Social {
-	text-align: right;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-top:29px;
 }
-/* кросс-классы */
+   .Social span {
+	height:33px;
+	width:33px;
+	margin-left:11px;
+	
+	
+}
+.Social .twitter {background:url(../img/icons8-twitter-circled.png) no-repeat center; background-size:contain;}
+.Social .vkontakte {background:url(../img/icons8-vk-circled.png) no-repeat center; background-size:contain;}
+.Social .pinterest {background:url(../img/icons8-pinterest.png) no-repeat center; background-size:contain;}
+.Social .facebook {background:url(../img/icons8-facebook-circled.png) no-repeat center; background-size:contain;}
+.Social .odnoklasniki {background:url(../img/icons8-odnoklassniki-circled.png) no-repeat center; background-size:contain;}
+				/* кросс-классы */
 .Btn {
 	background-color:  #5cd7ea;
 	color:#fefefe;
@@ -436,12 +558,15 @@ main .container .offer-central {
 		height:500px;
 		overflow:hidden;
 	}
+	
 }
 
 
-
-
-
+@media screen and (max-width:992px) {
+.Logo-Blue {
+		visibility: hidden;
+	}
+}
 
 @media screen and (max-width:768px) {
 	.header-logo {
@@ -516,4 +641,6 @@ main .container .offer-central {
     margin-right: auto;
     margin-left: auto;
 }
+	
+
 }
